@@ -1,0 +1,353 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+
+}
+
+strong,
+h3 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: "Manrope";
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+span {
+    font-family: "Manrope";
+}
+
+b {
+    font-family: "Manrope";
+    font-weight: 600;
+
+}
+
+h3 {
+    font-family: "Manrope";
+}
+
+header {
+    height: 450px;
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#research_filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px 0px 0px;
+}
+
+.filter__query {
+    align-items: center;
+    background-color: #FFD15B;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 1rem 1rem 0rem;
+    padding: 1rem 1rem;
+
+    width: 137px;
+}
+
+
+.title-icon {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.title-icon .outlined {
+    font-size: 18px;
+    color: white;
+}
+
+.header-figure {
+    width: 100%;
+    height: inherit;
+    position: relative;
+    text-align: center;
+    height: inherit;
+}
+
+.header-image {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.header-caption {
+    width: inherit;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-caption h1 {
+    align-self: baseline;
+    margin-top: 50px;
+    margin-left: 70px;
+    color: white;
+}
+
+.header-form {
+    width: inherit;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-form p {
+    color: #FFD15B;
+    margin-bottom: 10px;
+    font-size: 35px;
+    width: 700px;
+    font-family: "Anton";
+}
+
+.header-form div {
+    width: 700px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+
+}
+
+.header-form div #inputName {
+    border: none;
+    width: 95%;
+    font-family: "manrope";
+    padding: 20px;
+    font-size: 16px;
+}
+
+.header-form div span {
+    margin: auto 7px auto auto;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #1B1B1B;
+    color: white;
+}
+
+body {
+    background-color: #E5E5E5;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 85px;
+
+}
+
+/*filter*/
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    max-width: 195px;
+    margin-right: 85px;
+}
+
+.Ingredients-input {
+    background-color: #3282f7;
+
+}
+
+.filter-ul {
+    position: absolute;
+    list-style: none;
+    padding-inline-end: 20px;
+    visibility: hidden;
+    background-color: white;
+    width: 172px;
+    border-radius: 5px;
+}
+
+.filter-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-ul li {
+    padding: 5px 5px;
+    font-family: "manrope";
+    font-weight: 600;
+    color: #1B1B1B;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.filter-ul li:hover {
+    background-color: #FFD15B;
+}
+
+.filter-ul,
+.filter-input {
+    cursor: pointer;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-family: "manrope";
+    font-weight: 600;
+    color: #1B1B1B;
+    width: 140px;
+
+}
+
+.filter-input::placeholder {
+    font-family: "manrope";
+    font-weight: 600;
+    color: #1B1B1B;
+    font-size: 16px;
+
+}
+
+
+.material-icons {
+    font-size: 20px !important;
+}
+
+.filter-input-icons {
+    position: absolute;
+    transform: translate(129px, -39px);
+}
+
+
+
+/* Section recipes */
+.recipes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipes-article {
+    width: 30%;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.recipes-card {
+    width: 100%;
+}
+
+.recipes-card figcaption {
+    padding: 20px;
+}
+
+.recipes-card figcaption h3 {
+    font-family: 'Manrope';
+    font-size: 12px;
+    color: grey;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#totalRecettes {
+    font-size: 21px;
+    font-weight: 500;
+    color: #1B1B1B;
+    font-family: "Anton";
+
+}
+
+.recette-paragraph {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    max-height: 9.8em;
+}
+
+
+.recipes-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 244px;
+}
+
+.recipes-time {
+    position: absolute;
+    right: 0;
+    background-color: #FFD15B;
+    padding: 8px;
+    font-size: 12px;
+    margin: 10px;
+    border-radius: 14px;
+    top: 0;
+}
+
+.recipes-details {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recipes-detail {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.recipes-detail b {
+    width: 100%;
+}
+
+.recipes-detail span {
+    color: #7A7A7A;
+
+}

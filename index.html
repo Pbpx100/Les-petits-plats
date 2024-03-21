@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les petits Plats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <figure class="header-figure">
+            <img src="Photos/lampos-aritonang.jpg" class="header-image" alt="Lampos aritonang">
+            <figcaption class="header-caption">
+                <div class="title-icon">
+                    <h1>LES PETITS PLATS</h1>
+                    <span class="material-icons outlined">
+                        radio_button_checked
+                    </span>
+                </div>
+                <div class="header-form">
+                    <p>CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</p>
+                    <div id="">
+                        <input type="text" id="inputName" placeholder="Rechercher une recette, un ingrédient, ...">
+                        <span class="material-icons outlined">
+                            search
+                        </span>
+                    </div>
+                </div>
+            </figcaption>
+
+        </figure>
+    </header>
+    <main>
+        <section class="filter-section">
+            <div class="filter">
+                <div class="block">
+                    <div class="filter-form">
+                        <input class="filter-input" id="ingredients" type="text" placeholder="Ingrédients">
+                        <div class="filter-input-icons">
+                            <span class="material-icons arrow" title="options">expand_more</span>
+                        </div>
+                    </div>
+                    <ul class="filter-ul" id="list-ingredients">
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="filter-form">
+                        <input class="filter-input" id="appareils" type="text" placeholder="Appareils">
+                        <div class="filter-input-icons">
+                            <span class="material-icons arrow" title="options">expand_more</span>
+                        </div>
+
+
+                    </div>
+                    <ul class="filter-ul" id="list-appareils">
+                    </ul>
+
+                </div>
+                <div class="block">
+                    <div class="filter-form">
+                        <input class="filter-input" id="utensiles" type="text" placeholder="Utensiles">
+                        <div class="filter-input-icons">
+                            <span class="material-icons arrow" title="options">expand_more</span>
+                        </div>
+
+
+                    </div>
+                    <ul class="filter-ul" id="list-utensiles">
+                    </ul>
+                </div>
+            </div>
+            <div class="recettes">
+                <span id="totalRecettes"></span>
+            </div>
+        </section>
+        <div id="research_filters">
+        </div>
+        <section class="recipes" id="recipes">
+
+
+        </section>
+    </main>
+
+    <script src="recipes.js"> </script>
+    <script src="printRecipesData.js"> </script>
+    <script src="rechercheTagEtInput.js"> </script>
+    <script src="sortRecipesData.js"> </script>
+    <script src="modules/tagFiltersToggle.js"> </script>
+    <script src="initApp.js"> </script>
+
+
+</body>
+
+</html>
